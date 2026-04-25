@@ -1,0 +1,38 @@
+version: '3.8'
+
+services:
+  ollama:
+    image: ollama/ollama:latest
+    container_name: ollama
+    ports:
+      - "11434:11434"
+    volumes:
+      - ollama_data:/root/.ollama
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:11434/api/tags"]
+      interval: 10s
+      timeout: 5s
+      retries: 10
+      start_period: 30s
+
+  backend:
+    build: ./backend
+    container_name: localgpt-backend
+    ports:
+      - "8080:8080"
+    environment:
+      - SPRING_APPLICATION_JSON={"ollama":{"base-url":"http://ollama:11434","model":"llama3.2:1b"},"api":{"key":"localgpt-demo-key-2024"}}
+    depends_on:
+      ollama:
+        condition: service_healthy
+
+  frontend:
+    build: ./frontend
+    container_name: localgpt-frontend
+    ports:
+      - "3000:80"
+    depends_on:
+      - backend
+
+volumes:
+  ollama_data:
