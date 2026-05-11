@@ -6,7 +6,6 @@
 ![React](https://img.shields.io/badge/React-18-blue)
 ![Ollama](https://img.shields.io/badge/Ollama-llama3.2:1b-orange)
 ![Docker](https://img.shields.io/badge/Docker-Compose-2496ED)
-![License](https://img.shields.io/badge/license-MIT-green)
 
 ---
 
