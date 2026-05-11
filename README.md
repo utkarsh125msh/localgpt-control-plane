@@ -1,4 +1,4 @@
-# 🔒 LocalGPT Control Plane
+# LocalGPT Control Plane
 
 > Run AI models 100% on-premises. No data leaves your network. Ever.
 
@@ -9,7 +9,7 @@
 
 ---
 
-## 🧩 The Problem
+## The Problem
 
 Enterprises want to use AI — but **can't send sensitive data to OpenAI, Google, or any cloud API.**
 
@@ -19,18 +19,18 @@ Healthcare records. Legal documents. Financial data. Defense contracts.
 
 ---
 
-## ✅ The Solution
+## The Solution
 
 **LocalGPT Control Plane** is a minimal proof-of-concept of air-gapped AI inference:
 
-- 🧠 LLM runs **locally** via Ollama — no internet required after setup
-- ⚙️ Java Spring Boot REST API acts as the **control plane** between your apps and the model
-- 🖥️ React dashboard gives a **real-time view** of system health, model status, and cost savings
-- 🐳 Ships as a single `docker compose up` command
+-  LLM runs **locally** via Ollama — no internet required after setup
+-  Java Spring Boot REST API acts as the **control plane** between your apps and the model
+-  React dashboard gives a **real-time view** of system health, model status, and cost savings
+-  Ships as a single `docker compose up` command
 
 ---
 
-## 🏗️ Architecture
+## Architecture
 
 ```
 ┌─────────────────────────────────────────────────────┐
@@ -42,13 +42,13 @@ Healthcare records. Legal documents. Financial data. Defense contracts.
 │   │  :3000   │    │                 │   │llama3.2│  │
 │   └──────────┘    └─────────────────┘   └────────┘  │
 │                                                      │
-│              ✅ Zero data leaves this box             │
+│               Zero data leaves this box             │
 └─────────────────────────────────────────────────────┘
 ```
 
 ---
 
-## 🚀 Quick Start
+## Quick Start
 
 ### Prerequisites
 - Docker + Docker Compose
@@ -115,7 +115,7 @@ X-API-KEY: localgpt-demo-key-2024
 
 ---
 
-## 🗂️ Project Structure
+##  Project Structure
 
 ```
 localgpt-control-plane/
@@ -138,7 +138,7 @@ localgpt-control-plane/
 
 ---
 
-## 🔐 Security
+## Security
 
 | Feature | Implementation |
 |---|---|
@@ -148,7 +148,7 @@ localgpt-control-plane/
 | Request Logging | Timestamped logs on every inference call |
 
 
-## 🛠️ Tech Stack
+## Tech Stack
 
 | Layer | Technology |
 |---|---|
@@ -162,7 +162,7 @@ localgpt-control-plane/
 
 ---
 
-## 👨‍💻 Author
+## Author
 
 **Utkarsh** — Java Spring Boot + React Developer  
 Built as a demonstration of on-premises AI inference architecture.
