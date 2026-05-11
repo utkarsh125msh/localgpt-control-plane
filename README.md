@@ -28,6 +28,8 @@ Healthcare records. Legal documents. Financial data. Defense contracts.
 -  React dashboard gives a **real-time view** of system health, model status, and cost savings
 -  Ships as a single `docker compose up` command
 
+<img width="1106" height="892" alt="image" src="https://github.com/user-attachments/assets/68eba29c-9201-4364-8755-d014f30ce569" />
+
 ---
 
 ## Architecture
